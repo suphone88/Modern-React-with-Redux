@@ -12,23 +12,17 @@ function BookShow({ book, onDelete, onEdit }) {
     setShowEdit(!showEdit);
   };
 
-  const handleSubmit = (id, newTitle) => {
+  const handleSubmit = () => {
     setShowEdit(false);
-    onEdit(id, newTitle);
   };
 
   let content = <h3>{book.title}</h3>;
   if (showEdit) {
-    content = <BookEdit onSubmit={handleSubmit} book={book} />;
+    content = <BookEdit onSubmit={handleSubmit} onEdit={onEdit} book={book} />;
   }
 
   return (
     <div className="book-show">
-      <img
-        alt="books"
-        src={`https://api.lorem.space/image/book?w=300&h=200&${book.id}`}
-      />
-
       <div> {content} </div>
       <div className="actions">
         <button className="edit" onClick={handleEditClick}>
