@@ -1,0 +1,27 @@
+# Get all books
+
+GET http://localhost:3001/books HTTP/1.1
+content-type: application/json
+###
+# Create a book
+POST http://localhost:3001/books HTTP/1.1
+content-type: application/json
+
+{
+    "title": "New Book"
+    
+}
+
+###
+# Update a book
+PUT http://localhost:3001/books/2 HTTP/1.1
+content-type: application/json
+
+{
+    "title":"Harry Potter"
+}
+
+###
+# Delete a book
+DELETE http://localhost:3001/books/3 HTTP/1.1
+content-type: application/json
