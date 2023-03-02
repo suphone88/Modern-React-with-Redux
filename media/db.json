@@ -5,39 +5,46 @@
       "name": "Myra"
     },
     {
-      "name": "Elsie Price",
+      "name": "Jeremiah Rowe",
+      "id": 2
+    },
+    {
+      "name": "Ralph Moen",
       "id": 3
-    },
-    {
-      "name": "Harold Strosin",
-      "id": 4
-    },
-    {
-      "name": "Peggy Nader",
-      "id": 5
     }
   ],
   "albums": [
     {
-      "id": 10,
-      "title": "Hiking Trip",
-      "userId": 1
+      "userId": 2,
+      "title": "Tasty Cotton Ball",
+      "id": 9
     },
     {
-      "userId": 1,
-      "title": "Awesome Soft Bike",
+      "userId": 2,
+      "title": "Bespoke Soft Chair",
+      "id": 10
+    },
+    {
+      "userId": 2,
+      "title": "Tasty Fresh Ball",
       "id": 11
     },
     {
       "userId": 1,
-      "title": "Luxurious Bronze Hat",
+      "title": "Bespoke Steel Pants",
       "id": 12
     },
     {
       "userId": 1,
-      "title": "Small Granite Pants",
+      "title": "Gorgeous Steel Fish",
       "id": 13
     }
   ],
-  "photos": []
+  "photos": [
+    {
+      "albumId": 12,
+      "url": "https://loremflickr.com/150/150/abstract?lock=86528",
+      "id": 1
+    }
+  ]
 }
